@@ -108,7 +108,5 @@ java -Xmx4g -jar snpEff.jar -v Haemophilus_influenzae_custom \
   DundeeXXX_SNP_Hinflu_ALT_filtGQ_fixed.vcf > DundeeXXX_SNP_Hinflu_ALT.ann.vcf
 ```
 
-After each run, the SnpEff reports (`snpEff_summary.html`, `snpEff_genes.txt`) were renamed with the sample name.
-
 The annotated VCF files were exported to tables with `bcftools query` for further analysis in Excel.  
 ```bcftools query -f '%CHROM,%POS,%ID,%REF,%ALT,%QUAL,%FILTER,%INFO/ANN\n' DundeeXXX_SNP_Hinflu.ann.vcf```
